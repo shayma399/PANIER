@@ -1,0 +1,36 @@
+nav{
+
+			padding-right:180px;
+			padding-left: 200px;
+			position: sticky;
+			height:65px;
+			background-color: transparent; 
+		}
+		.LIST{
+	list-style-type: none;
+	display: flex;
+	text-align: right;
+	justify-content: flex-end;
+	}
+.lun{
+	padding-right: 14px;
+      
+ }
+.li{
+	text-decoration: none;
+	color:#808080;
+	font-size: 15PX;
+	font-family: "garamond" , sans-serif ;
+	font-size: bold ;
+}
+.end{
+	width: 900px;
+	justify-content:flex-end;
+}
+.li:hover {
+	color: #00b39b;
+}
+
+.like {
+	color: red !important;
+}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		nav {
+
+			padding-right: 200px;
+			padding-left: 300px;
+			position: sticky;
+			height: 70px;
+			width: 970px;
+			background-color: #ffc266;
+
+			display: flex;
+		}
+
+		.LIST {
+			list-style-type: none;
+			display: flex;
+			text-align: right;
+			width: 700px;
+			justify-content: flex-end;
+			margin-top: 20px;
+		}
+
+		.lun {
+			padding-right: 14px;
+		}
+
+		.li {
+			text-decoration: none;
+			color: WHITE;
+			font-size: 15PX;
+			font-family: "garamond", sans-serif;
+			font-size: bold;
+			font-family: Cursive, "Brush Script MT"
+		}
+
+		.end {
+			width: 900px;
+			justify-content: flex-end;
+		}
+
+		.li:hover {
+			color: #e65c00;
+		}
+
+		.subflex {
+			display: flex;
+			width: 450px;
+			margin-right: 0px;
+		}
+
+		.flex {
+			display: flex;
+		}
+
+		#para {
+			padding-left: 10px;
+			font-size: 1.59em;
+			margin: auto 0px;
+			color: #e65c00;
+			margin-top: 10PX;
+			font-family: Cursive, "Brush Script MT"
+		}
+
+		.main {
+			margin-left: 40px;
+			margin-top: 50px;
+			display: flex;
+			width: 800PX;
+			height: 178px;
+			margin-right: 0px;
+			overflow: auto;
+
+			flex-wrap: wrap;
+		}
+
+		.article {
+			margin-right: 15px;
+			margin-top: 10px;
+			margin-left: 5px;
+			/*border: 2px  double grey ;
+	border-radius: 7px;*/
+			cursor: pointer;
+		}
+
+		.article:hover {
+			box-shadow: 5px 5px 8px #000000;
+		}
+
+		.desc {
+
+			font-family: Cursive, "Brush Script MT";
+			margin-left: 10px;
+
+		}
+
+		.cart {
+
+
+			width: 35%;
+			height: 450PX;
+			margin-left: 950px;
+			z-index: 1;
+			border: 5px outset #ffc266;
+			border-radius: 18px;
+			position: fixed;
+			text-align: center;
+			overflow: auto;
+			margin-top: 180px;
+
+
+
+		}
+
+		#purchase {
+			display: flex;
+		}
+
+		button {
+			float: right;
+			background-color: #FF7F50;
+			color: white;
+			margin-bottom: 3px;
+			margin-right: 3px;
+			border: 5px outset #FF7F50;
+			cursor: pointer;
+		}
+
+		.Bingo {
+			font-family: Cursive, "Brush Script MT"
+
+		}
+
+		.forme {
+			margin-top: 100px;
+			margin-left: 50px;
+			font-family: Cursive, "Brush Script MT";
+			text-decoration: underline;
+			font-size: 1.2em;
+
+		}
+
+		.foot {
+			width: 500px;
+			margin-left: 70px;
+		}
+
+		button:hover {
+			box-shadow: 2px 2px 4px #000000;
+			color: black;
+
+		}
+
+		.like {
+			color: red !important;
+		}
+		.remove{
+			float: left ;
+			margin-top: 7px;
+		}
+		.total{
+			float: right;
+			margin-top: 20px;
+			margin-right: 15px;
+			font-size: 1.5em;
+			font-family:  Cursive, "Brush Script MT";
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+		crossorigin="anonymous" />
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+	<nav class="flex ">
+
+
+		<div class="subflex">
+			<i class='fa fa-shopping-basket' style='font-size:48px;color:#FF6347 ;text-shadow:2px 2px 4px #000000;'>
+			</i>
+			<b>
+				<p id="para">
+					Bingo Store
+				</p>
+			</b>
+		</div>
+		<ul class="LIST">
+
+			<li class="lun"> <a class="li" href="#home">
+					<i class='fa fa-gift' style='color:red'></i> BS gifts </a> </li>
+			<li class="lun"> <a class="li" href="#home">
+					<i class='far fa-address-book' style='color:red'></i> About us </a></li>
+			<li class="lun"> <a class="li" href="#home">
+					<i class='fa fa-tty' style='color:red'></i> MYspace </a></li>
+		</ul>
+	</nav>
+	<div class="cart">
+		<h2 class="Bingo">
+			<i class='fa fa-shopping-basket' style='font-size:58px;color:#FF6347 ;text-shadow:2px 2px 4px #000000'> </i>
+			Bingo Cart
+		</h2>
+		<div id="purchase">
+			<div class="article">
+				<img alt="Buy Gold Bracelets &amp; Bangles for Women by Jewels galaxy Online | Ajio.com" class="n3VNCb"
+					src="https://assets.ajio.com/medias/sys_master/root/hf3/h98/15903725617182/-473Wx593H-461011325-gold-MODEL.jpg"
+					data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"
+					style="width: 240px; height: 140px; margin: 0px;">
+				<div class="desc">
+					GOLD bangles
+					<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+					<button> 
+
+
+						22.9$
+					</button>
+					<button class='remove'>
+						remove
+					</button >
+					<label> Quantity</label>
+					<input  type="number" name="QTY" >
+				</div>
+			</div>
+			<div class="article">
+				<img alt="AKG Y50BTBLK On-Ear Wireless Headphone - Black for sale online | eBay" class="n3VNCb"
+					src="https://i.ebayimg.com/images/g/K3oAAOSwNINc2sAU/s-l1600.jpg" data-noaft="1" jsname="HiaYvf"
+					jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+				<div class="desc">
+					AKG Y50BTBLK
+					<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+					<button>
+
+						97$
+					</button>
+					<button class='remove'> 
+						remove
+					</button>
+					<LAbel> QTY</LAbel>
+					<input class="num" type="number" name="QTY"  >
+				</div>
+			</div>
+		</div>
+	<div> 
+		<strong>
+			<p class="total">
+				Total: 0$
+			</p>
+		</strong>
+	</div>
+	</div>
+	<h1 class="subflex">
+		<i class='fa fa-bullhorn' style='font-size:48Px;color:red;text-shadow:2px 2px 4px #000000;'></i>
+		<p class="desc" style="font-size:30px;"> Best sellers</p>
+	</h1>
+	<div class="main">
+		<div class="article">
+			<img alt="Amazon.com: Boston Spaceship Classic Rock Album Cover Adult T-Shirt:  Clothing" class="n3VNCb"
+				src="https://m.media-amazon.com/images/I/61NiOlGbkYL._AC_UL1001_.jpg" data-deferred="1" id="imi"
+				data-w="1001" data-h="988" jsname="HiaYvf" jsaction="load:XAeZkd;" data-atf="true"
+				data-iml="3932.935000048019" style="height: 140px; width:240px; margin: 0px;">
+			<div class="desc">
+				Brand T-shirt
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button  >
+
+					45$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Jadon | Platform Boots | Dr. Martens Official | Dr. Martens France" class="n3VNCb"
+				src="https://i1.adis.ws/i/drmartens/15265100.80.jpg?$medium$" data-noaft="1" jsname="HiaYvf"
+				jsaction="load:XAeZkd;" style="height: 140px; width:240px; margin: 0px;">
+			<div class="desc">
+
+				DR MARTENS Boots
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					95$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Buy Gold Bracelets &amp; Bangles for Women by Jewels galaxy Online | Ajio.com" class="n3VNCb"
+				src="https://assets.ajio.com/medias/sys_master/root/hf3/h98/15903725617182/-473Wx593H-461011325-gold-MODEL.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"
+				style="width: 240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				GOLD bangles
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					22.9$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="These Genius Accessories Will Make Your Face Mask More Comfortable | Travel  + Leisure | Travel + Leisure"
+				class="n3VNCb"
+				src="https://static.onecms.io/wp-content/uploads/sites/28/2020/09/18/face-mask-accessories-lead-MASKACC0920.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="height: 140px; width:240px; margin: 0px;">
+			<div class="desc">
+				Face mask
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					15$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Shop For fahion Accessories | Auckland Shopping | Heart of the City" class="n3VNCb"
+				src="https://heartofthecity.co.nz/sites/default/files/styles/ratio_5_x_3_medium_/public/2019-06/accessories.jpg?itok=StWIdsy_"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="height: 140px; width:240px; margin: 0px;">
+			<div class="desc">
+				Sun glasses
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					55$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Must-Have Summer Accessories - Baltimore Style" class="n3VNCb"
+				src="https://www.baltimorestyle.com/wp-content/uploads/2020/07/Etsy-scarf-e1595435607298.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Hair bonds
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					39.9$
+				</button>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!--<img class="rg_i Q4LuWd" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUDE--osQYAQTjuOHK4GA_Q1QQhOJvdAknA&amp;usqp=CAU" data-lt="" jsname="Q4LuWd" width="173" height="180" alt="Pixel Heart Png &amp; Free Pixel Heart.png Transparent Images #66461 - PNGio" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUDE--osQYAQTjuOHK4GA_Q1QQhOJvdAknA&amp;usqp=CAU">
+		//transparent
+		<img alt="Zelda Heart - Black And White Pixel Heart, Transparent Png - 851x701  (#3570146) PNG Image - PngJoy" class="n3VNCb" src="https://www.pngjoy.com/pngm/180/3570146_zelda-heart-black-and-white-pixel-heart-transparent.png" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 383px; height: 315.54px; margin: 0px;">
+		
+	</div>!-->
+	<h3 class="subflex">
+		<i class='fa fa-futbol' style='font-size:48px;color:red ;text-shadow:2px 2px 4px #000000'></i>
+		<p class="desc" style="font-size:30px;">Sport products</p>
+	</h3>
+	<div class="main">
+		<div class="article">
+			<img class="rg_i Q4LuWd"
+				data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ulmHnQ1v4shYusOIeiulHtzsL6wsxPZ8XA&amp;usqp=CAU"
+				data-lt="" jsname="Q4LuWd"
+				alt="Best home gym equipment - train through Coronavirus! - Android Authority"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ulmHnQ1v4shYusOIeiulHtzsL6wsxPZ8XA&amp;usqp=CAU"
+				style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Pull up bar
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					78.99$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Fitness Elastic Sit Up Pull Rope Abdominal Exerciser Equipment Sport New  Hot | No equipment workout, Cardio workout, Biking workout"
+				class="n3VNCb" src="https://i.pinimg.com/originals/09/a8/d6/09a8d69f497beee7543dac8fb4bf484e.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Elastic Bands
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase" >
+
+					67.99$
+				</button>
+			</div>
+		</div>
+
+		<div class="article">
+			<img alt="Sport Home Gym Fitness Equipment Yoga Mat Yoga Thick EVA Foam Yoga Mat Non  Slip Yoga Pilates Exercise Resistance Bands Esterilla|Yoga Mats| -  AliExpress"
+				class="n3VNCb"
+				src="https://ae01.alicdn.com/kf/Hcd8be83454e94400b08b4ac19930e3a5c/Sport-Home-Gym-Fitness-Equipment-Yoga-Mat-Yoga-Thick-EVA-Foam-Yoga-Mat-Non-Slip-Yoga.jpg_q50.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Workout mat
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					7.99$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Wellshow Sport Home Gym Equipment Portable Ab Fitness Crunch Roller Trainer  Abdominal Trainer Sit Up Machine - Buy Ab Fitness Crunch Machine,Sit Up  Machine Ab Fitness Crunch Roller Trainer Abdominal Trainer,Ab Fitness"
+				class="n3VNCb"
+				src="https://sc01.alicdn.com/kf/HTB1ccjTPAvoK1RjSZPfq6xPKFXaX/225252782/HTB1ccjTPAvoK1RjSZPfq6xPKFXaX.jpg_.webp"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Abdominal Trainer
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					149.9$
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<h3 class="subflex">
+		<i class='fab fa-keybase' style='font-size:48px;color:red ;text-shadow:2px 2px 4px #000000'></i>
+		<p class="desc" style="font-size:30px;">Beauty products</p>
+	</h3>
+	<div class="main">
+		<div class="article">
+			<img alt="Cosmetic Products Vector Banner Template. Cosmetics Mock Up Bottle..  Royalty Free Cliparts, Vectors, And Stock Illustration. Image 140536105."
+				class="n3VNCb"
+				src="https://previews.123rf.com/images/zeinousstudio/zeinousstudio2002/zeinousstudio200200025/140536105-cosmetic-products-vector-banner-template-cosmetics-mock-up-bottle-of-whitening-and-moisturizing-prod.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Vector Banner
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					39$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img class="rg_i Q4LuWd"
+				data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGdrCgaCdW4hcp7ZR1fIttIzhJyCwdeL37g&amp;usqp=CAU"
+				data-lt="" jsname="Q4LuWd" alt="Dcpderm - DCP DERMATOLOGIC COSMETIC PRODUCTS #derme# THE... | Facebook"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbGdrCgaCdW4hcp7ZR1fIttIzhJyCwdeL37g&amp;usqp=CAU"
+				style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				DCP pack
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					229$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img class="rg_i Q4LuWd"
+				data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooKxN8PKjgtJSU_wk4IU5P1vgoY6eNVCd0g&amp;usqp=CAU"
+				data-lt="" jsname="Q4LuWd" alt="Specialised in cosmetic products worldwide | Bransus Cosmetics"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRooKxN8PKjgtJSU_wk4IU5P1vgoY6eNVCd0g&amp;usqp=CAU"
+				style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Nails Polish
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase" >
+
+					9.99$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="STUDIO Palette Eyeshadow 39 couleur -Make up studio -Stay_in à prix pas  cher | Jumia Tunisie"
+				class="n3VNCb"
+				src="https://tn.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/49/3072/2.jpg?5644"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Eyeshadow palette
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					29.99$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Huda Beauty ORIGINAL PROFESSIONAL 12 MAKE UP BRUSHES SET - Price in India,  Buy Huda Beauty ORIGINAL PROFESSIONAL 12 MAKE UP BRUSHES SET Online In  India, Reviews, Ratings &amp; Features | Flipkart.com"
+				class="n3VNCb"
+				src="https://rukminim1.flixcart.com/image/352/352/jlqwpe80-1/brush-applicator/h/m/y/original-professional-12-make-up-brushes-set-vvp2-huda-beauty-original-imaf8t6yhvn7ecwr.jpeg?q=70"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				make up brush set
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					69.99$
+				</button>
+			</div>
+		</div>
+	</div>
+	<h3 class="subflex">
+		<i class='fa fa-stream' style='font-size:48px;color:red ;text-shadow:2px 2px 4px #000000'></i>
+		<p class="desc" style="font-size:30px;">Gadgets</p>
+	</h3>
+	<div class="main">
+		<div class="article">
+			<img alt="tploo Webcam Webcam autofocus Live Broadcast Equipment Beauty USB Camera HD  autofocus-Upgraded Package Webcam pc Portable Webcam USB HD: Amazon.fr:  Informatique"
+				class="n3VNCb" src="https://images-na.ssl-images-amazon.com/images/I/51XelBYosQL._AC_SX425_.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Outlying Gadgets
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					128$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="List of 20 Cool Gadgets for Men" class="n3VNCb"
+				src="https://cdn.cdnparenting.com/articles/2019/05/27190124/458401537-H.jpg" data-noaft="1"
+				jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				VR gadgets
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase"> 
+
+					339$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img class="rg_i Q4LuWd"
+				data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZCrWyZk1oi2P4IQUfR2TxDDuvKwwTEbPtQ&amp;usqp=CAU"
+				data-lt="" jsname="Q4LuWd"
+				alt="60 cool gadgets: Our pick of the best new tech for 2021 - BBC Science Focus  Magazine"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZCrWyZk1oi2P4IQUfR2TxDDuvKwwTEbPtQ&amp;usqp=CAU"
+				style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Smart watches
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					197$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Prix Téléviseur Samsung 49&quot; Full HD Curved Smart TV K6500 Series 6 -  Technopro Tunisie"
+				class="n3VNCb"
+				src="https://www.technopro-online.com/24505/prix-televiseur-samsung-49-full-hd-curved-smart-tv-k6500-series-6-tunisie.jpg"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Smart TV
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					597$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img alt="Smartphones - Toute l'actualité sur les smartphones Android et opérateurs  mobiles" class="n3VNCb"
+				src="https://c1.lestechnophiles.com/images.frandroid.com/wp-content/uploads/2019/11/xiaomi-redmi-note-8t-test-11.jpg?resize=300,300"
+				data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				Redmi-note-8
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase"> 
+
+					397$
+				</button>
+			</div>
+		</div>
+		<div class="article">
+			<img class="rg_i Q4LuWd"
+				data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg2hvG31F7Wai2A-yjubNS-t-FgUKKdsA7uw&amp;usqp=CAU"
+				data-lt="" jsname="Q4LuWd"
+				alt="Qoo10 - [AKG] AKG N400 Noise cancelling fully wireless earphones : Mobile  Accessories"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg2hvG31F7Wai2A-yjubNS-t-FgUKKdsA7uw&amp;usqp=CAU"
+				style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				AKG W earphones
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					37$
+				</button>
+			</div>
+		</div>
+		<div class="article" background>
+			<img alt="AKG Y50BTBLK On-Ear Wireless Headphone - Black for sale online | eBay" class="n3VNCb"
+				src="https://i.ebayimg.com/images/g/K3oAAOSwNINc2sAU/s-l1600.jpg" data-noaft="1" jsname="HiaYvf"
+				jsaction="load:XAeZkd;" style="width:240px; height: 140px; margin: 0px;">
+			<div class="desc">
+				AKG Y50BTBLK
+				<i class="fa fa-heart" style="font-size: 18px ; color: #110706;margin-left:9PX;"></i>
+				<button class="btn-purchase">
+
+					97$
+				</button>
+			</div>
+		</div>
+	</div>
+	<!--<div class="forme">
+		<h4 style="color: tomato">
+			<i class='fa fa-gift' style='color:red;font-size: 48px ; text-shadow:2px 2px 4px #000000 '></i>
+			Type your mail adress to entrer the selection and get BSgifts
+		</h4>
+		<form>
+			<div class="foot">
+				<label>
+
+					Mail adress :
+				</label>
+
+				<input type="text" name="main" placeholder="Xyz@server.com">
+				<button style="margin-top: 20px;">
+					Sbmite
+				</button>
+			</div>
+		</form>
+
+	</div>-->
+	<script src="shop.js">
+
+	</script>
+</body>
+
+</html>
